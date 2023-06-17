@@ -1,0 +1,27 @@
+import java.util.*;
+public class Pangram {
+
+    public static void main(String args[])
+    {
+        Scanner sc = new Scanner(System.in);
+        String st = sc.nextLine();
+        st = st.toLowerCase();
+        String str = st.replaceAll("\\s+","");          //Removing spaces 
+
+        for(int i=0;i<26;i++)
+        {
+           String s = String.valueOf((char)(i+'a'));    //creating runnable String values "a" to "z"
+
+           if(str.contains(s))                          //Checking String value is present in given String  
+           {
+
+           }
+           else
+           {
+            System.out.print(s);
+           }
+        }
+
+    }
+    
+}
